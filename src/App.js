@@ -90,11 +90,7 @@ class App extends Component {
                 <option key={`${index}-${obj.country}`} value={obj.currency}> {obj.country} </option>
               )}
             </select>
-            {
-              this.state.currency !== 'PHP' && (<div>
-                <a href="#" className="link" onClick={() => this.setCurrency('PHP')} style={{color: "black", fontSize: 16, fontFamily: 'Bungee'}}> [CLICK HERE TO RESET] </a>
-              </div>)
-            }
+
           </div>
 
           <div style={{marginTop: 10}}>
